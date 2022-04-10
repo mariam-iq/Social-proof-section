@@ -1,0 +1,208 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url("/images/bg-pattern-top-desktop.svg"),
+        url("/images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    padding: 140px 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 375px;
+
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+.container .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .top .review {
+    width: 400px;
+}
+
+.container .top .review h1 {
+    font-weight: 700;
+    font-size: 3em;
+    color: hsl(300, 43%, 22%);
+}
+
+.container .top .review p {
+    font-weight: 400;
+    line-height: 25px;
+    color: hsl(303, 10%, 53%);
+}
+
+.container .top .rate {
+    display: flex;
+    flex-direction: column;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    width: 600px;
+    margin: 20px 40px 20px 20px;
+
+}
+
+.container .top .rate .box1,
+.container .top .rate .box2,
+.container .top .rate .box3 {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(290deg 30% 96%);
+    padding: 20px 60px 20px 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.container .top .rate .star {
+    padding: 0px 25px;
+}
+
+.container .top .rate .star img {
+    padding-left: 5px;
+}
+
+.container .top .rate .box1 {
+    align-self: flex-start;
+}
+
+.container .top .rate .box2 {
+    align-self: center;
+}
+
+.container .top .rate .box3 {
+    align-self: flex-end;
+}
+
+.container .bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 350px;
+
+}
+
+.container .bottom .card1,
+.container .bottom .card2,
+.container .bottom .card3 {
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    width: 400px;
+    padding: 30px 25px 0;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 60px;
+    height: 230px;
+}
+
+.container .bottom .card1 {
+    align-self: flex-start;
+}
+
+.container .bottom .card2 {
+    align-self: center;
+}
+
+.container .bottom .card3 {
+    align-self: flex-end;
+}
+
+.container .bottom .info {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.container .bottom .info .photo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.container .bottom .info .names {
+    margin: -15px 0 0 20px;
+}
+
+.container .bottom .info .names .job {
+    margin-top: -10px;
+    color: hsl(333, 80%, 67%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*...........................................................................*/
+
+/*for mobile*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 375px;
+        padding: 40px 10px 10px;
+
+    }
+
+    .container .top {
+        text-align: center;
+    }
+
+    .container .top .rate .box1,
+    .container .top .rate .box2,
+    .container .top .rate .box3 {
+        align-self: center;
+        width: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .container .top .rate .star {
+        padding-bottom: 10px;
+    }
+
+    .container .bottom .card1,
+    .container .bottom .card2,
+    .container .bottom .card3 {
+        margin-top: 10px;
+    }
+}
